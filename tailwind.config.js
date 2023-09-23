@@ -14,5 +14,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  // eslint-disable-next-line global-require, import/no-extraneous-dependencies
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: ['synthwave', 'cupcake'],
+  },
 };
