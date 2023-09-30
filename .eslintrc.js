@@ -1,3 +1,6 @@
 module.exports = {
   extends: ['next/core-web-vitals', 'airbnb-base', 'prettier'],
+  rules: {
+    'no-unused-vars': 'warn',
+  },
 };
