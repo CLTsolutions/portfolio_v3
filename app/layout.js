@@ -8,7 +8,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="synthwave">
-      <body>{children}</body>
+      <body className="prose mx-auto my-10 w-full px-5 md:px-0">
+        {children}
+      </body>
     </html>
   );
 }
