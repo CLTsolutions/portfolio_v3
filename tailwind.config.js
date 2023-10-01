@@ -15,8 +15,8 @@ module.exports = {
     },
   },
   // eslint-disable-next-line global-require, import/no-extraneous-dependencies
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui'), require('@tailwindcss/typography')],
   daisyui: {
-    themes: ['synthwave', 'cupcake'],
+    themes: ['cupcake', 'synthwave'],
   },
 };
