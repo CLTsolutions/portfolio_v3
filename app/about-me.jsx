@@ -3,35 +3,17 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import { ShortBio } from './components/bios';
-import socialLinks from './data';
+import { LongBio, ShortBio } from './components/bios';
+import { companyText, introText, socialLinks } from './data';
 import BioButton from './shared';
 
 export default function AboutMe() {
   const [showShortBio, setShowShortBio] = useState(true);
 
-  const companyText = (
-    <a
-      href="https://olio.health"
-      target="_blank"
-      rel="noreferrer"
-      className="no-underline hover:link-accent hover:no-underline"
-    >
-      Olio
-    </a>
-  );
-
-  const introText = (
-    <>
-      {'Hey there! '}
-      <span role="img" aria-label="waving-hand">
-        👋
-      </span>
-    </>
-  );
-
   const socialLinksList = () => {
-    const links = Object.entries(socialLinks).map(([key, value]) => (
+    if (!socialLinks) return null;
+
+    const links = Object.entries(socialLinks)?.map(([key, value]) => (
       <a
         href={value}
         key={key}
@@ -47,11 +29,7 @@ export default function AboutMe() {
   };
 
   const handleClick = (val) => setShowShortBio(val);
-  const bioToShow = showShortBio ? (
-    <ShortBio />
-  ) : (
-    <p>This is the long bio...</p>
-  );
+  const bioToShow = showShortBio ? <ShortBio /> : <LongBio />;
 
   return (
     <>

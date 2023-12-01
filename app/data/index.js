@@ -1,3 +1,3 @@
-import { socialLinks } from './socials';
+export { socialLinks } from './socials';
 
-export default socialLinks;
+export { companyText, introText } from './text';
