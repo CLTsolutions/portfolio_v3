@@ -2,10 +2,10 @@ import socialLinks from '../../data';
 
 const ShortBio = () => {
   const text =
-    "I'm Chelsey, a former flight attendant turned software engineer with a passion for flight, code, and learning new technologies. When not crafting software or nurturing my green thumb, you'll often find me drumming up excitement as I learn the art of percussion. Dreams of one day having a garden, chickens, and maybe even a dairy cow (or two!) fill my spare moments.";
+    "I'm Chelsey, a former flight attendant turned software engineer. I chose to transition my career into software because it lets me use my creative side to enhance people's web experience. I take great satisfaction knowing in this web centric world that I'm an important piece of what keeps it going. One day I hope to have a garden and chickens.";
 
   return (
-    <p className="text-justify text-sm">
+    <p className="text text-justify">
       {text}
       <br />
       <br />
