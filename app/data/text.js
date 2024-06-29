@@ -1,12 +1,10 @@
 export const companyText = (
   <a
-    href="https://olio.health"
+    href=""
     target="_blank"
     rel="noreferrer"
     className="no-underline hover:link-accent hover:no-underline"
-  >
-    Olio
-  </a>
+  ></a>
 );
 
 export const introText = (

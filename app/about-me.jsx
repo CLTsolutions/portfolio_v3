@@ -36,7 +36,7 @@ export default function AboutMe() {
       <header className="flex flex-col flex-wrap items-center justify-center md:flex-nowrap lg:flex-row">
         <div className="flex flex-col justify-center">
           <h1 className="mb-0 sm:text-3xl md:text-5xl">Chelsey Tschida</h1>
-          <h2 className="mt-4">Software Engineer @ {companyText}</h2>
+          <h2 className="mt-4">Mid-level Software Engineer</h2>
         </div>
         <div className="h-72 w-72 flex-wrap overflow-hidden rounded-full">
           <Image
