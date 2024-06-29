@@ -45,6 +45,7 @@ export default function AboutMe() {
             width={300}
             alt="Chelsey in-flight in commercial airplane wearing pilot headset"
             className="not-prose object-top-right w-full"
+            priority={true}
           />
         </div>
       </header>
