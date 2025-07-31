@@ -1,6 +1,13 @@
 module.exports = {
   extends: ['next/core-web-vitals', 'airbnb-base', 'prettier'],
   plugins: ['simple-import-sort'],
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project: './jsconfig.json',
+      },
+    },
+  },
   rules: {
     'no-unused-vars': 'warn',
     'simple-import-sort/imports': [
