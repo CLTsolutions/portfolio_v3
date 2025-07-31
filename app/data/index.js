@@ -1,3 +1,9 @@
 export { socialLinks } from './socials';
 
-export { companyText, introText } from './text';
+export {
+  companyText,
+  githubFooterText,
+  introText,
+  longBioText,
+  shortBioText,
+} from './text';

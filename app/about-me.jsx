@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 import { LongBio, ShortBio } from './components/bios';
-import { companyText, introText, socialLinks } from './data';
+import { githubFooterText } from './data/text';
+import { introText, socialLinks } from './data';
 import BioButton from './shared';
 
 export default function AboutMe() {
@@ -36,7 +37,7 @@ export default function AboutMe() {
       <header className="flex flex-col flex-wrap items-center justify-center md:flex-nowrap lg:flex-row">
         <div className="flex flex-col justify-center">
           <h1 className="mb-0 sm:text-3xl md:text-5xl">Chelsey Tschida</h1>
-          <h2 className="mt-4">Mid-level Software Engineer</h2>
+          <h2 className="mt-4 text-center lg:text-left">Software Engineer</h2>
         </div>
         <div className="h-72 w-72 flex-wrap overflow-hidden rounded-full">
           <Image
@@ -67,6 +68,7 @@ export default function AboutMe() {
       <main>
         <h3 className="text-xl font-bold">{introText}</h3>
         <article className="mt-4">{bioToShow}</article>
+        <section>{githubFooterText}</section>
       </main>
     </>
   );
