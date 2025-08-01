@@ -6,8 +6,7 @@ import Image from 'next/image';
 import { LongBio, ShortBio } from '@/components/bios';
 import { introText, socialLinks } from '@/data';
 import { githubFooterText } from '@/data/text';
-
-import BioButton from '../shared';
+import BioButton from '@/shared/bio-button';
 
 export default function AboutMe() {
   const [showShortBio, setShowShortBio] = useState(true);
