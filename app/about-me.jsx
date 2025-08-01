@@ -3,10 +3,11 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import { LongBio, ShortBio } from './components/bios';
-import { githubFooterText } from './data/text';
-import { introText, socialLinks } from './data';
-import BioButton from './shared';
+import { LongBio, ShortBio } from '@/components/bios';
+import { introText, socialLinks } from '@/data';
+import { githubFooterText } from '@/data/text';
+
+import BioButton from '../shared';
 
 export default function AboutMe() {
   const [showShortBio, setShowShortBio] = useState(true);

@@ -1,4 +1,4 @@
-import { longBioText } from '../../data';
+import { longBioText } from '@/data';
 
 const LongBio = () => {
   const renderParagraphs = (text) =>

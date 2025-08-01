@@ -1,4 +1,4 @@
-import { shortBioText } from '../../data';
+import { shortBioText } from '@/data';
 
 const ShortBio = () => {
   const text = shortBioText;
