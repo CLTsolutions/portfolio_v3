@@ -5,7 +5,6 @@ import Image from 'next/image';
 
 import { LongBio, ShortBio } from '@/components/bios';
 import { introText, socialLinks } from '@/data';
-import { githubFooterText } from '@/data/text';
 import BioButton from '@/shared/bio-button';
 
 export default function AboutMe() {
@@ -68,7 +67,6 @@ export default function AboutMe() {
       <main>
         <h3 className="text-xl font-bold">{introText}</h3>
         <article className="mt-4">{bioToShow}</article>
-        <section>{githubFooterText}</section>
       </main>
     </>
   );

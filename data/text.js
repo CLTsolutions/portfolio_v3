@@ -1,5 +1,3 @@
-import { socialLinks } from './socials';
-
 export const companyText = (
   <a
     href=""
@@ -15,23 +13,6 @@ export const introText = (
     <span role="img" aria-label="waving-hand">
       👋
     </span>
-  </>
-);
-
-export const githubFooterText = (
-  <>
-    {
-      "Want to see what cool projects I'm tinkering with? Check out my latest on "
-    }
-    <a
-      href={socialLinks.github}
-      target="_blank"
-      rel="noreferrer"
-      className="no-underline hover:link-accent hover:no-underline"
-    >
-      Github
-    </a>
-    .
   </>
 );
 
