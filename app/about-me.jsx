@@ -33,12 +33,12 @@ export default function AboutMe() {
 
   return (
     <>
-      <header className="flex flex-col flex-wrap items-center justify-center md:flex-nowrap lg:flex-row">
-        <div className="flex flex-col justify-center">
+      <header className="flex flex-col items-center justify-center gap-6 lg:flex-row lg:gap-8">
+        <div className="flex flex-col justify-center text-center lg:text-left">
           <h1 className="mb-0 sm:text-3xl md:text-5xl">Chelsey Tschida</h1>
-          <h2 className="mt-4 text-center lg:text-left">Software Engineer</h2>
+          <h2 className="mt-4">Software Engineer</h2>
         </div>
-        <div className="h-72 w-72 flex-wrap overflow-hidden rounded-full">
+        <div className="h-64 w-64 sm:h-72 sm:w-72 flex-shrink-0 overflow-hidden rounded-full">
           <Image
             src="/images/ct-plane.jpg"
             height={300}
@@ -49,8 +49,8 @@ export default function AboutMe() {
           />
         </div>
       </header>
-      <section className="mt-7 flex justify-between">
-        <div>
+      <section className="mt-7 flex justify-between items-start">
+        <div className="flex flex-wrap gap-y-3">
           <BioButton
             label="Short Bio"
             active={showShortBio}
