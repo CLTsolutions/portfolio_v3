@@ -19,13 +19,13 @@ export default function AboutMe() {
         key={key}
         target="_blank"
         rel="noreferrer"
-        className="mr-2 text-yellow-400 no-underline hover:link-secondary last:mr-0"
+        className="text-yellow-400 no-underline hover:link-secondary"
       >
         {key}
       </a>
     ));
 
-    return <div>{links}</div>;
+    return <div className='flex gap-2'>{links}</div>;
   };
 
   const handleClick = (val) => setShowShortBio(val);
@@ -50,14 +50,14 @@ export default function AboutMe() {
         </div>
       </header>
       <section className="mt-7 flex justify-between items-start">
-        <div className="flex flex-wrap gap-y-3">
+        <div className="flex flex-wrap gap-y-3 gap-x-4">
           <BioButton
-            label="Short Bio"
+            label="short bio"
             active={showShortBio}
             onClick={() => handleClick(true)}
           />
           <BioButton
-            label="Long Bio"
+            label="long bio"
             active={!showShortBio}
             onClick={() => handleClick(false)}
           />
